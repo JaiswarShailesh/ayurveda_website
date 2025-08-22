@@ -77,7 +77,7 @@ const Navbar = () => {
             </li>
             <li className="dropdown">
               <a href="#">
-                <span>Acadamics</span>
+                <span>Academics</span>
                 <i className="bi bi-chevron-down toggle-dropdown"></i>
               </a>
               <ul>
