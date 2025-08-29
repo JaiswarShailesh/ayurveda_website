@@ -6,27 +6,27 @@ import ayuvedaCourse3 from "../assets/images/ayurveda_course_3.png";
 const Courses = () => {
   return (
     // <!-- Courses Section -->
-    <section id="courses" class="courses section">
+    <section id="courses" className="courses section">
       {/* <!-- Section Title --> */}
-      <div class="container section-title" data-aos="fade-up">
+      <div className="container section-title" data-aos="fade-up">
         <h2>Courses</h2>
         <p>Popular Courses</p>
       </div>
       {/* <!-- End Section Title --> */}
 
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           <div
-            class="col-lg-4 col-md-6 d-flex align-items-stretch"
+            className="col-lg-4 col-md-6 d-flex align-items-stretch"
             data-aos="zoom-in"
             data-aos-delay="100"
           >
-            <div class="course-item">
-              <img src={ayuvedaCourse1} class="img-fluid" alt="..." />
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Undergraduate Programs</p>
-                  {/* <p class="price">$169</p> */}
+            <div className="course-item">
+              <img src={ayuvedaCourse1} className="img-fluid" alt="..." />
+              <div className="course-content">
+                <div className="d-flex justify-content-between align-items-center mb-3">
+                  <p className="category">Undergraduate Programs</p>
+                  {/* <p className="price">$169</p> */}
                 </div>
 
                 <h3>
@@ -34,25 +34,25 @@ const Courses = () => {
                     Bachelor of Ayurvedic Medicine and Surgery (BAMS)
                   </a>
                 </h3>
-                <p class="description">
+                <p className="description">
                   A comprehensive program that combines the principles of
                   Ayurveda with modern medical science, preparing students to
                   become qualified Ayurvedic physicians.
                 </p>
-                {/* <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
+                {/* <div className="trainer d-flex justify-content-between align-items-center">
+                  <div className="trainer-profile d-flex align-items-center">
                     <img
                       src="assets/img/trainers/trainer-1-2.jpg"
-                      class="img-fluid"
+                      className="img-fluid"
                       alt=""
                     />
-                    <a href="" class="trainer-link">
+                    <a href="" className="trainer-link">
                       Antonio
                     </a>
                   </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bi bi-person user-icon"></i>&nbsp;50 &nbsp;&nbsp;
-                    <i class="bi bi-heart heart-icon"></i>&nbsp;65
+                  <div className="trainer-rank d-flex align-items-center">
+                    <i className="bi bi-person user-icon"></i>&nbsp;50 &nbsp;&nbsp;
+                    <i className="bi bi-heart heart-icon"></i>&nbsp;65
                   </div>
                 </div> */}
               </div>
@@ -61,16 +61,16 @@ const Courses = () => {
           {/* <!-- End Course Item--> */}
 
           <div
-            class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+            className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
             data-aos="zoom-in"
             data-aos-delay="200"
           >
-            <div class="course-item">
-              <img src={ayuvedaCourse2} class="img-fluid" alt="..." />
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Postgraduate Programs</p>
-                  {/* <p class="price">$250</p> */}
+            <div className="course-item">
+              <img src={ayuvedaCourse2} className="img-fluid" alt="..." />
+              <div className="course-content">
+                <div className="d-flex justify-content-between align-items-center mb-3">
+                  <p className="category">Postgraduate Programs</p>
+                  {/* <p className="price">$250</p> */}
                 </div>
 
                 <h3>
@@ -78,25 +78,25 @@ const Courses = () => {
                     MD (Ayurveda) – Kayachikitsa (General Medicine)
                   </a>
                 </h3>
-                <p class="description">
+                <p className="description">
                   Advanced specialization in Ayurvedic internal medicine,
                   focusing on diagnosis, treatment, and management of chronic
                   and acute illnesses.
                 </p>
-                {/* <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
+                {/* <div className="trainer d-flex justify-content-between align-items-center">
+                  <div className="trainer-profile d-flex align-items-center">
                     <img
                       src="assets/img/trainers/trainer-2-2.jpg"
-                      class="img-fluid"
+                      className="img-fluid"
                       alt=""
                     />
-                    <a href="" class="trainer-link">
+                    <a href="" className="trainer-link">
                       Lana
                     </a>
                   </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bi bi-person user-icon"></i>&nbsp;35 &nbsp;&nbsp;
-                    <i class="bi bi-heart heart-icon"></i>&nbsp;42
+                  <div className="trainer-rank d-flex align-items-center">
+                    <i className="bi bi-person user-icon"></i>&nbsp;35 &nbsp;&nbsp;
+                    <i className="bi bi-heart heart-icon"></i>&nbsp;42
                   </div>
                 </div> */}
               </div>
@@ -105,16 +105,16 @@ const Courses = () => {
           {/* <!-- End Course Item--> */}
 
           <div
-            class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+            className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
             data-aos="zoom-in"
             data-aos-delay="300"
           >
-            <div class="course-item">
-              <img src={ayuvedaCourse3} class="img-fluid" alt="..." />
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="category">Diploma & Certificate Courses</p>
-                  {/* <p class="price">$180</p> */}
+            <div className="course-item">
+              <img src={ayuvedaCourse3} className="img-fluid" alt="..." />
+              <div className="course-content">
+                <div className="d-flex justify-content-between align-items-center mb-3">
+                  <p className="category">Diploma & Certificate Courses</p>
+                  {/* <p className="price">$180</p> */}
                 </div>
 
                 <h3>
@@ -122,25 +122,25 @@ const Courses = () => {
                     Certificate Course in Ayurvedic Nutrition & Dietetics
                   </a>
                 </h3>
-                <p class="description">
+                <p className="description">
                   Short-term course covering Ayurvedic dietary principles, food
                   planning, and nutritional therapy for maintaining and
                   restoring health.
                 </p>
-                {/* <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
+                {/* <div className="trainer d-flex justify-content-between align-items-center">
+                  <div className="trainer-profile d-flex align-items-center">
                     <img
                       src="assets/img/trainers/trainer-3-2.jpg"
-                      class="img-fluid"
+                      className="img-fluid"
                       alt=""
                     />
-                    <a href="" class="trainer-link">
+                    <a href="" className="trainer-link">
                       Brandon
                     </a>
                   </div>
-                  <div class="trainer-rank d-flex align-items-center">
-                    <i class="bi bi-person user-icon"></i>&nbsp;20 &nbsp;&nbsp;
-                    <i class="bi bi-heart heart-icon"></i>&nbsp;85
+                  <div className="trainer-rank d-flex align-items-center">
+                    <i className="bi bi-person user-icon"></i>&nbsp;20 &nbsp;&nbsp;
+                    <i className="bi bi-heart heart-icon"></i>&nbsp;85
                   </div>
                 </div> */}
               </div>
