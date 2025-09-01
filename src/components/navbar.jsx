@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -35,112 +36,169 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header id="header" className="header d-flex align-items-center sticky-top">
-      <div className="container-fluid container-xl position-relative d-flex align-items-center">
-        <a href="/" className="logo d-flex align-items-center me-auto" onClick={closeMobileOnLink}>
-          <h1 className="sitename">Ayurveda</h1>
-        </a>
-
-        <nav id="navmenu" className="navmenu">
-          <ul>
-            <li>
-              <a href="/" className="active" onClick={closeMobileOnLink}>
-                Home
+    <>
+      <header id="header" className="header sticky-top">
+        {/* <div className="topbar d-flex align-items-center">
+          <div className="container d-flex justify-content-center justify-content-md-between">
+            <div className="contact-info d-flex align-items-center">
+              <a href="" className="d-none d-md-block">
+                <i className="bi bi-envelope d-flex align-items-center ms-4">
+                  <span>contact@kbpayurvedahospital.com</span>
+                </i>
               </a>
-            </li>
-
-            <li>
-              <a href="/about" onClick={closeMobileOnLink}>About Us</a>
-            </li>
-
-            {/* Academics */}
-            <li className="dropdown">
-              {/* Use anchor for styling, but prevent navigation and toggle via React */}
-              <a
-                href="/#"
-                className={openDropdown === "academics" ? "active" : ""}
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleDropdown("academics");
-                }}
-              >
-                <span>Academics</span>
-                <i className="bi bi-chevron-down toggle-dropdown"></i>
+              <a href="" className="d-none d-md-block">
+                <i className="bi bi-phone d-flex align-items-center ms-4">
+                  <span>Request a Callback</span>
+                </i>
               </a>
-              <ul className={openDropdown === "academics" ? "dropdown-active" : ""}>
-                <li><a href="/courses" onClick={closeMobileOnLink}>Courses</a></li>
-                <li><a href="/departments" onClick={closeMobileOnLink}>Departments</a></li>
-                <li><a href="/research" onClick={closeMobileOnLink}>Research</a></li>
-              </ul>
-            </li>
-
-            {/* Students */}
-            <li className="dropdown">
-              <a
-                href="/#"
-                className={openDropdown === "students" ? "active" : ""}
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleDropdown("students");
-                }}
-              >
-                <span>Students</span>
-                <i className="bi bi-chevron-down toggle-dropdown"></i>
+              <a href="">
+                <i className="bi bi-phone d-flex align-items-center ms-4">
+                  <span>Emergency Number: +1 5589 55488 55</span>
+                </i>
               </a>
-              <ul className={openDropdown === "students" ? "dropdown-active" : ""}>
-                <li><a href="/students" onClick={closeMobileOnLink}>Students</a></li>
-                <li><a href="/international-students" onClick={closeMobileOnLink}>International Student Cell</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="/admission" onClick={closeMobileOnLink}>Admission</a>
-            </li>
-
-            <li>
-              <a href="/hospital" onClick={closeMobileOnLink}>Hospital</a>
-            </li>
-
-            {/* News & Events */}
-            <li className="dropdown">
-              <a
-                href="/#"
-                className={openDropdown === "news" ? "active" : ""}
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleDropdown("news");
-                }}
-              >
-                <span>News & Events</span>
-                <i className="bi bi-chevron-down toggle-dropdown"></i>
+            </div>
+            <div className="social-links d-none d-md-flex align-items-center">
+              <a href="#" className="twitter">
+                <i className="bi bi-twitter-x"></i>
               </a>
-              <ul className={openDropdown === "news" ? "dropdown-active" : ""}>
-                <li><a href="/events" onClick={closeMobileOnLink}>Events</a></li>
-                <li><a href="/blogs" onClick={closeMobileOnLink}>Blogs</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="/careers" onClick={closeMobileOnLink}>Careers</a>
-            </li>
-          </ul>
-
-          {/* Mobile toggle button (icon swaps via state) */}
-          <button
-            type="button"
-            aria-label="Toggle navigation"
-            className="mobile-nav-toggle d-xl-none border-0 btn bg-transparent"
-            onClick={() => setMobileOpen((v) => !v)}
+              <a href="#" className="facebook">
+                <i className="bi bi-facebook"></i>
+              </a>
+              <a href="#" className="instagram">
+                <i className="bi bi-instagram"></i>
+              </a>
+              <a href="#" className="linkedin">
+                <i className="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div> */}
+        <div
+          className="container-fluid container-xl position-relative d-flex align-items-center"
+          style={{ padding: "15px" }}
+        >
+          <a
+            href="/"
+            className="logo d-flex align-items-center me-auto"
+            onClick={closeMobileOnLink}
           >
-            <i className={mobileOpen ? "bi bi-x bg-transparent" : "bi bi-list"} />
-          </button>
-        </nav>
+            {/* <h1 className="sitename">Ayurveda</h1> */}
+            <img
+              src="assets/images/ayurveda_website_logo.png"
+              alt="ayurveda hospital college logo"
+            />
+          </a>
 
-        <a className="btn-getstarted" href="/courses" onClick={closeMobileOnLink}>
-          Get Started
-        </a>
-      </div>
-    </header>
+          <nav id="navmenu" className="navmenu">
+            <ul>
+              <li>
+                {/* <a href="/" onClick={closeMobileOnLink}>
+                  Home
+                </a> */}
+                <NavLink to="/" onClick={closeMobileOnLink}>
+                  Home
+                </NavLink>
+              </li>
+
+              <li>
+                <a href="/about" onClick={closeMobileOnLink}>
+                  About Us
+                </a>
+              </li>
+
+              <li>
+                {/* <a href="/hospital" onClick={closeMobileOnLink}>
+                  Hospital
+                </a> */}
+                <a
+                  href="/college"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeMobileOnLink}
+                >
+                  College
+                </a>
+              </li>
+
+              <li>
+                {/* <a href="/hospital" onClick={closeMobileOnLink}>
+                  Hospital
+                </a> */}
+                <a
+                  href="/hospital"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeMobileOnLink}
+                >
+                  Hospital
+                </a>
+              </li>
+
+              <li>
+                <a href="/research-centre" onClick={closeMobileOnLink} target="_blank">
+                  Research Centre
+                </a>
+              </li>
+
+              {/* News & Events */}
+              <li className="dropdown">
+                <a
+                  href="/#"
+                  className={openDropdown === "news" ? "active" : ""}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    toggleDropdown("news");
+                  }}
+                >
+                  <span>News & Events</span>
+                  <i className="bi bi-chevron-down toggle-dropdown"></i>
+                </a>
+                <ul
+                  className={openDropdown === "news" ? "dropdown-active" : ""}
+                >
+                  <li>
+                    <a href="/events" onClick={closeMobileOnLink}>
+                      Events
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/blogs" onClick={closeMobileOnLink}>
+                      Blogs
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="/careers" onClick={closeMobileOnLink}>
+                  Careers
+                </a>
+              </li>
+            </ul>
+
+            {/* Mobile toggle button (icon swaps via state) */}
+            <button
+              type="button"
+              aria-label="Toggle navigation"
+              className="mobile-nav-toggle d-xl-none border-0 btn bg-transparent"
+              onClick={() => setMobileOpen((v) => !v)}
+            >
+              <i
+                className={mobileOpen ? "bi bi-x bg-transparent" : "bi bi-list"}
+              />
+            </button>
+          </nav>
+
+          {/* <a
+            className="btn-getstarted"
+            href="/courses"
+            onClick={closeMobileOnLink}
+          >
+            Get Started
+          </a> */}
+        </div>
+      </header>
+    </>
   );
 };
 

@@ -8,7 +8,6 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 const TestimonialSection = () => {
   const renderStars = (rating) => {
-    console.log(rating);
     const stars = [];
     for (let i = 0; i < 5; i++) {
       stars.push(
@@ -18,7 +17,6 @@ const TestimonialSection = () => {
         ></i>
       );
     }
-    console.log(stars);
     return stars;
   };
   return (

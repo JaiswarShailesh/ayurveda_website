@@ -7,7 +7,7 @@ import { keySpecialties } from "../data/keySpecialties";
 
 const SpecialiySection = () => {
   return (
-    <section id="keySpeciality" className="courses section">
+    <section id="keySpeciality" className="key-speciality courses section">
       <SectionHeading
         sectionTitle={"Departments"}
         sectionSubTitle={"Key Speciality"}
@@ -21,7 +21,7 @@ const SpecialiySection = () => {
               data-aos-delay={(index + 1) * 100}
               key={speciality.id}
             >
-              <div className="course-item departments-card">
+              <div className="course-item departments-card overflow-hidden">
                 <a href={speciality.link}>
                   <img
                     src={speciality.image}

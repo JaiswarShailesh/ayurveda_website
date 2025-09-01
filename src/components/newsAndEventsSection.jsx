@@ -1,28 +1,29 @@
 import React from "react";
+import SectionHeading from "./sectionHeading";
 
 const NewsAndEventsSection = () => {
   return (
-    <section id="testimonials" className="testimonials section">
+    <section id="events" className="events section">
       <SectionHeading
         sectionTitle={"Stay Updated"}
         sectionSubTitle={"News and Events"}
       />
 
       <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/events-item-1.jpg" alt="..." />
+        <div className="row">
+          <div className="col-md-6 d-flex align-items-stretch">
+            <div className="card">
+              <div className="card-img">
+                <img src="assets/images/newsAndEvents/events-item-1.jpg" alt="..." />
               </div>
-              <div class="card-body">
-                <h5 class="card-title">
+              <div className="card-body">
+                <h5 className="card-title">
                   <a href="">Introduction to webdesign</a>
                 </h5>
-                <p class="fst-italic text-center">
+                <p className="fst-italic text-center">
                   Sunday, September 26th at 7:00 pm
                 </p>
-                <p class="card-text">
+                <p className="card-text">
                   Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
                   tempor ut labore et dolore magna aliqua. Ut enim ad minim
                   veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -31,19 +32,19 @@ const NewsAndEventsSection = () => {
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/events-item-2.jpg" alt="..." />
+          <div className="col-md-6 d-flex align-items-stretch">
+            <div className="card">
+              <div className="card-img">
+                <img src="assets/images/newsAndEvents/events-item-2.jpg" alt="..." />
               </div>
-              <div class="card-body">
-                <h5 class="card-title">
+              <div className="card-body">
+                <h5 className="card-title">
                   <a href="">Marketing Strategies</a>
                 </h5>
-                <p class="fst-italic text-center">
+                <p className="fst-italic text-center">
                   Sunday, November 15th at 7:00 pm
                 </p>
-                <p class="card-text">
+                <p className="card-text">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
                   illo inventore veritatis et quasi architecto beatae vitae

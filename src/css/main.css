@@ -229,7 +229,7 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 15px 0;
+  /* padding: 15px 0; */
   transition: all 0.5s;
   z-index: 997;
 }
@@ -1943,4 +1943,69 @@ section,
 
 .service-card:hover .service-card-icon {
   border: 2px solid var(--accent-color);
+}
+
+.key-speciality .departments-card img {
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.key-speciality .departments-card:hover img {
+  transform: scale(1.1);
+}
+
+.header .topbar {
+  background-color: var(--accent-color);
+  height: 40px;
+  padding: 0;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: var(--background-color);
+}
+
+.header .topbar a {
+  color: var(--background-color);
+}
+
+.header .topbar .social-links a {
+  color: color-mix(in srgb, var(--contrast-color), transparent 40%);
+  line-height: 0;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+.header .topbar .social-links a:hover {
+  color: var(--contrast-color);
+}
+
+.header .topbar .contact-info i {
+  font-style: normal;
+  color: var(--contrast-color);
+}
+
+.header .topbar .contact-info i a,
+.header .topbar .contact-info i span {
+  padding-left: 5px;
+  color: var(--contrast-color);
+}
+
+.trainers-index.our-institutions .member img {
+  margin: -1px -1px 0px -1px;
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.trainers-index.our-institutions .member:hover img {
+  transform: scale(1.1);
+}
+
+.trainers-index.our-institutions .member .member-content {
+  /* padding: 0 20px 30px 20px; */
+  padding: 15px 20px;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
+.trainers-index.our-institutions .member h4 {
+  color: var(--background-color);
 }

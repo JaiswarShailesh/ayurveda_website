@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import bannerImage from "../assets/images/ayurveda_hero_banner1.png";
+// import bannerImage from "../assets/images/ayurveda_hero_banner1.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const HeroBanner = () => {
+const HeroBanner = ({ imageUrl }) => {
   useEffect(() => {
     AOS.init({
       duration: 600,
@@ -16,7 +16,7 @@ const HeroBanner = () => {
     <>
       {/* Hero Section */}
       <section id="hero" className="hero section dark-background">
-        <img src={bannerImage} alt="Ayurveda Hero Banner" data-aos="fade-in" />
+        <img src={imageUrl} alt="Ayurveda Hero Banner" data-aos="fade-in" />
 
         <div className="container">
           <h2 data-aos="fade-up" data-aos-delay="100">
