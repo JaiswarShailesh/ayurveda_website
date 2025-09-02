@@ -1,19 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Footer = () => {
+const FooterCollege = () => {
   return (
     <footer id="footer" className="footer position-relative light-background">
       <div className="container footer-top">
         <div className="row gy-4">
           <div className="col-lg-4 col-md-6 footer-about">
-            <NavLink to="/" className="logo d-flex align-items-center">
+            <NavLink to="/college" className="logo d-flex align-items-center">
               {/* <span className="sitename">
                 SVKM's Smt. Krutiben Bhupeshbhai Patel Ayurveda College,
                 Hospital and Research Centre
               </span> */}
               <img
-                src="assets/images/ayurveda_website_logo.png"
+                src="assets/images/college_logo.png"
                 alt="ayurveda hospital college logo"
               />
             </NavLink>
@@ -130,4 +130,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterCollege;
