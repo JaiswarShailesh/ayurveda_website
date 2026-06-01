@@ -12,10 +12,10 @@ const FooterHospital = () => {
                 SVKM's Smt. Krutiben Bhupeshbhai Patel Ayurveda College,
                 Hospital and Research Centre
               </span> */}
-              <img
+              {/* <img
                 src="assets/images/hospital_logo.png"
                 alt="ayurveda hospital college logo"
-              />
+              /> */}
             </NavLink>
             <div className="footer-contact pt-3">
               <p>A108 Adam Street</p>
